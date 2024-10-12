@@ -1,4 +1,7 @@
 body {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -6,11 +9,44 @@ body {
     background-color: #1F2937;
     font-size: 24px;
     color: #F9FAF8;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+li {
+    list-style-type: none;
+}
+
+ul {
+    display: flex;
+    gap: 16px;
 }
 
 .hero {
     background-color: #1F2937;
     color: #F9FAF8;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 60px;
+}
+
+.left-block {
+    width: 400px;
+}
+
+button {
+    width: 120px;
+    height: 40px;
+    background-color: #3882F6;
+    color: #E5E7EB;
+}
+
+.hero-img {
+    width: 600px;
+    height: 300px;
+    background-color: #868686;
 }
 
 .left-block .subject {
@@ -23,9 +59,10 @@ body {
     color: #E5E7EB;
 }
 
-.left-block button {
-    background-color: #3882F6;
-    color: #E5E7EB;
+.org-chart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .org-chart .subject {
@@ -34,11 +71,19 @@ body {
     font-weight: 900;
 }
 
+.org-images {
+    display: flex;
+    gap: 60px;
+}
+
 .img-box {
     width: 200px;
     height: 200px;
     border: 2px solid #3882F6;
     background-color: transparent;
+}
+.img-text {
+    width: 200px;
 }
 
 .quote {
@@ -46,12 +91,36 @@ body {
     font-size: 36px;
     font-style: italic;
     color: #1F2837;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subquote {
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+}
+
+.quoteauthor {
+    align-self: flex-end;
+}
+
+.cta {
+    display: flex;
+    justify-content: center;
 }
 
 .cta-box {
     background-color: #3882F6;
     font-size: 36px;
     color: #F9FAF8;
+    width: 1100px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    padding: 20px 100px;
+    margin: 100px;
 }
 
 .footer {
